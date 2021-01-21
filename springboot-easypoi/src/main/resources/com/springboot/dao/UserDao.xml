@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.springboot.dao.UserDao">
+    <resultMap id="userVOMap" type="com.springboot.entity.export.UserExportVO">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="email" column="email"/>
+        <result property="phone" column="phone"/>
+        <result property="qq" column="qq"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+    <select id="select" resultMap="userVOMap">
+        select id,username,email,phone,qq,create_time,update_time from user
+        <where>
+            <if test="startTime != null and endTime != null ">
+                create_time between #{startTime} and #{endTime}
+            </if>
+        </where>
+    </select>
+    <insert id="insertList">
+        insert into user(username,email,phone,qq) values
+        <foreach collection="userExportVO" item="item" separator=",">
+            (#{item.username},#{item.email},#{item.phone},#{item.qq})
+        </foreach>
+    </insert>
+</mapper>
