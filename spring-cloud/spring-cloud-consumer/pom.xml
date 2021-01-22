@@ -29,10 +29,10 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
-
+    <!-- SpringCloud依赖，起到管理版本的作用 -->
     <dependencyManagement>
         <dependencies>
             <dependency>

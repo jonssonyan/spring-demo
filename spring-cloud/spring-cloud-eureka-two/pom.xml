@@ -27,11 +27,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- 最新版的 eureka 服务端包 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
     </dependencies>
+    <!-- SpringCloud依赖，起到管理版本的作用 -->
     <dependencyManagement>
         <dependencies>
             <dependency>
