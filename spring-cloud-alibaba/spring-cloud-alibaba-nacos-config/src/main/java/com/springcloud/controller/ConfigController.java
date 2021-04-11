@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/config")
+// 实现配置自动更新
 @RefreshScope
 public class ConfigController {
     @Value("${useLocalCache:false}")
