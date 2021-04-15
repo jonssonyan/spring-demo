@@ -10,7 +10,7 @@
     <artifactId>nacos-discovery-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>nacos-discovery-consumer</name>
-    <description>Demo project for Spring Boot</description>
+    <description>消费者</description>
 
     <properties>
         <spring-cloud-netflix.version>2.2.5.RELEASE</spring-cloud-netflix.version>
