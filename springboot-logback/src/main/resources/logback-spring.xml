@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!--日志输出路径-->
+    <property name="LOG_HOME" value="/data/logging/logs"/>
+
+    <!--控制台日志输出配置-->
+    <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
+        <!--对输出日志进行格式化-->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--此处设置字符集-->
+            <charset>UTF-8</charset>
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} (%file:%line\) [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <!--日志文件配置info-->
+    <appender name="fileInfoLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--如果只是想要 Info 级别的日志，只是过滤 info 还是会输出 Error 日志，因为 Error 的级别高，
+        所以我们使用下面的策略，可以避免输出 Error 的日志-->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!--过滤 Error-->
+            <level>ERROR</level>
+            <!--匹配到就禁止-->
+            <onMatch>DENY</onMatch>
+            <!--没有匹配到就允许-->
+            <onMismatch>ACCEPT</onMismatch>
+        </filter>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/system_info.%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+            <MaxHistory>5</MaxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>20MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+
+        <!--日志输出编码格式化-->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <charset>UTF-8</charset>
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--日志文件配置error-->
+    <appender name="fileErrorLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <!--设置日志级别,过滤掉info日志,只输入error日志-->
+            <level>ERROR</level>
+        </filter>
+        <encoder>
+            <pattern>
+                %msg%n
+            </pattern>
+        </encoder>
+        <!--滚动策略-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/system_error.%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+            <MaxHistory>1</MaxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>20MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+
+        <!--日志输出编码格式化-->
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d [%thread] %-5level %logger{36} %line - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+<!--    &lt;!&ndash;指定最基础的日志输出级别&ndash;&gt;-->
+<!--    <root level="INFO">-->
+<!--        <appender-ref ref="consoleLog"/>-->
+<!--    </root>-->
+<!--    &lt;!&ndash;name 扫描包的位置&ndash;&gt;-->
+<!--    <logger name="com.springboot" level="INFO">-->
+<!--        <appender-ref ref="fileInfoLog"/>-->
+<!--        <appender-ref ref="fileErrorLog"/>-->
+<!--    </logger>-->
+
+    <!-- 测试环境+开发环境. 多个使用逗号隔开. -->
+    <springProfile name="test,dev">
+        <logger name="com.springboot.controller" level="DEBUG" additivity="false">
+            <appender-ref ref="consoleLog"/>
+            <appender-ref ref="fileInfoLog"/>
+            <appender-ref ref="fileErrorLog"/>
+        </logger>
+    </springProfile>
+
+    <!-- 生产环境. -->
+    <springProfile name="prod">
+        <logger name="com.springboot.controller" level="INFO" additivity="false">
+            <appender-ref ref="fileInfoLog"/>
+            <appender-ref ref="fileErrorLog"/>
+        </logger>
+    </springProfile>
+</configuration>
