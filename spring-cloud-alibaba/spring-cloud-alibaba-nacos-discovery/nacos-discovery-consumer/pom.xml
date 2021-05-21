@@ -6,6 +6,7 @@
         <groupId>com.springcloud</groupId>
         <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath/>
     </parent>
     <artifactId>nacos-discovery-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
