@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" type="text/css">
+</head>
+<body>
+<table>
+    <tr>
+        <th>no</th>
+        <th>username</th>
+        <th>password</th>
+        <th>phone</th>
+    </tr>
+    <tr th:each="user,stat : ${accountList}">
+        <td th:text="${stat.count}"></td>
+        <td th:text="${user.username}"></td>
+        <td th:text="${user.password}"></td>
+        <td th:text="${user.phone}"></td>
+    </tr>
+</table>
+</body>
+</html>
