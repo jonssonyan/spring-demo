@@ -3,7 +3,7 @@ package com.springboot.utils;
 
 import com.springboot.entity.vo.ResultVO;
 
-public class ResultVOUtils {
+public class Result {
     public static ResultVO<Object> success(Object object) {
         ResultVO<Object> resultVO = new ResultVO<>();
         resultVO.setCode(1);
@@ -13,7 +13,7 @@ public class ResultVOUtils {
     }
 
     public static ResultVO<Object> success() {
-        return ResultVOUtils.success(null);
+        return Result.success(null);
     }
 
     public static ResultVO<Object> fail(Object object) {
@@ -25,6 +25,6 @@ public class ResultVOUtils {
     }
 
     public static ResultVO<Object> fail() {
-        return ResultVOUtils.fail(null);
+        return Result.fail(null);
     }
 }

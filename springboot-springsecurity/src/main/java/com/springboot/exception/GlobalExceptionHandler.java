@@ -1,7 +1,7 @@
 package com.springboot.exception;
 
 import com.springboot.entity.vo.ResultVO;
-import com.springboot.utils.ResultVOUtils;
+import com.springboot.utils.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -16,13 +16,13 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public ResultVO<Object> defaultExceptionHandler(HttpServletRequest req, Exception e) {
         log.error("---BaseException Handler---Host {} invokes url {} ERROR: ", req.getRemoteHost(), req.getRequestURL(), e);
-        return ResultVOUtils.fail("系统错误，请联系网站管理员！");
+        return Result.fail("系统错误，请联系网站管理员！");
     }
 
     @ExceptionHandler(value = RuntimeException.class)
     @ResponseBody
     public ResultVO<Object> RuntimeExceptionHandler(HttpServletRequest req, RuntimeException e) {
         log.error("---BaseException Handler---Host {} invokes url {} ERROR: ", req.getRemoteHost(), req.getRequestURL(), e);
-        return ResultVOUtils.fail(e.getMessage());
+        return Result.fail(e.getMessage());
     }
 }
