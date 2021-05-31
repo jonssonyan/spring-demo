@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.springboot</groupId>
-    <artifactId>springboot-springsecurity</artifactId>
+    <artifactId>springboot-springsecurity-jwt</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-springsecurity</name>
-    <description>Demo project for Spring Boot</description>
+    <name>springboot-springsecurity-jwt</name>
+    <description>Demo project for Spring Boot Security JWT</description>
 
     <properties>
         <java.version>1.8</java.version>
