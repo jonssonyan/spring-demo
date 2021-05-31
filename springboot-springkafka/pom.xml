@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.springboot</groupId>
-    <artifactId>springboot-kafka</artifactId>
+    <artifactId>springboot-springkafka</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-kafka</name>
-    <description>Demo project for Spring Boot</description>
+    <name>springboot-springkafka</name>
+    <description>Demo project for Spring Boot Spring Kafka</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
