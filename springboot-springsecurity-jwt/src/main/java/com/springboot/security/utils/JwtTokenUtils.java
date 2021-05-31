@@ -31,7 +31,7 @@ public class JwtTokenUtils {
                 .setHeaderParam("typ", SecurityConstants.TOKEN_TYPE)
                 .signWith(secretKey, SignatureAlgorithm.HS256)
                 .claim(SecurityConstants.ROLE_CLAIMS, String.join(",", roles))
-                .setIssuer("Speech")
+                .setIssuer("Security")
                 .setIssuedAt(new Date())
                 .setSubject(username)
                 .setExpiration(new Date(System.currentTimeMillis() + expiration * 1000))
