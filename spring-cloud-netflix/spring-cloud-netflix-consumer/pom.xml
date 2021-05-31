@@ -12,7 +12,7 @@
     <artifactId>spring-cloud-netflix-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-cloud-netflix-consumer</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Demo project for Spring Cloud Netflix Consumer</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
