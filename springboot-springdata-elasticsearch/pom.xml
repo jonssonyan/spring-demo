@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.springboot</groupId>
-    <artifactId>springboot-elasticsearch</artifactId>
+    <artifactId>springboot-springdata-elasticsearch</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-elasticsearch</name>
-    <description>Demo project for Spring Boot</description>
+    <name>springboot-springdata-elasticsearch</name>
+    <description>Demo project for Spring Boot Spring Data Elasticsearch</description>
 
     <properties>
         <java.version>1.8</java.version>
