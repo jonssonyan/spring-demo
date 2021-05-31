@@ -11,7 +11,7 @@
     <artifactId>nacos-discovery-provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>nacos-discovery-provider</name>
-    <description>提供者</description>
+    <description>Demo project for Spring Cloud Alibaba Nacos Discovery Provider</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>

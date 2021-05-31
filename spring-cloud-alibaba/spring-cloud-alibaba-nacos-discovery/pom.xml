@@ -13,7 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>spring-cloud-alibaba-nacos-discovery</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Demo project for Spring Cloud Alibaba Nacos Discovery</description>
     <properties>
         <java.version>1.8</java.version>
         <com-alibaba-cloud.version>2.2.5.RELEASE</com-alibaba-cloud.version>
