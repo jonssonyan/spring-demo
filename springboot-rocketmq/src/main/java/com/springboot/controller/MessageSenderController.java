@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.math.BigDecimal;
 
 @RestController
-public class MessageController {
+public class MessageSenderController {
     @Autowired
     private RocketMQTemplate rocketMQTemplate;
 
@@ -27,7 +27,7 @@ public class MessageController {
         rocketMQTemplate.asyncSend("test-topic-2", new OrderPaidEvent("T_001", new BigDecimal("88.00")), new SendCallback() {
             @Override
             public void onSuccess(SendResult var1) {
-                System.out.printf("async onSucess SendResult=%s %n", var1);
+                System.out.printf("async onSuccess SendResult=%s %n", var1);
             }
 
             @Override
@@ -36,7 +36,7 @@ public class MessageController {
             }
         });
         // 有序的发送消息
-        rocketMQTemplate.syncSendOrderly("orderly_topic", MessageBuilder.withPayload("Hello, World").build(), "hashkey");
+        rocketMQTemplate.syncSendOrderly("orderly_topic", MessageBuilder.withPayload("Hello, World").build(), "hashKey");
         //  一旦rocketMQTemplate被销毁，您就不能用这个rocketMQTemplate再次发送任何消息
         //rocketMQTemplate.destroy();
         return Result.success();
