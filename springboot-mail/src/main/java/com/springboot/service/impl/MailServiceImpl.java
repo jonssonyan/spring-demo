@@ -87,6 +87,7 @@ public class MailServiceImpl implements MailService {
             helper.setCc(cc);
         }
         FileSystemResource file = new FileSystemResource(new File(filePath));
+        // File.separator 在windows下是\，在unix下时候/
         String fileName = filePath.substring(filePath.lastIndexOf(File.separator));
         helper.addAttachment(fileName, file);
         mailSender.send(message);

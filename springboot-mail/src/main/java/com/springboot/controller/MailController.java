@@ -40,9 +40,9 @@ public class MailController {
     @PostMapping("/sendHtmlMail")
     public Result sendHtmlMail() throws MessagingException {
         Context context = new Context();
-        context.setVariable("project", "Spring Boot Mail");
-        context.setVariable("author", "Spring Boot");
-        context.setVariable("url", "https://spring.io");
+        context.setVariable("project", "Spring Boot Demo");
+        context.setVariable("author", "Jonsson Yan");
+        context.setVariable("url", "https://github.com/jonssonyan/spring-demo");
 
         String emailTemplate = templateEngine.process("welcome", context);
         mailService.sendHtmlMail("205820645@qq.com", "这是一封模板HTML邮件", emailTemplate);
@@ -65,9 +65,9 @@ public class MailController {
         templateEngine.setTemplateResolver(templateResolver);
 
         Context context = new Context();
-        context.setVariable("project", "Spring Boot Mail");
-        context.setVariable("author", "Spring Boot");
-        context.setVariable("url", "https://spring.io");
+        context.setVariable("project", "Spring Boot Demo");
+        context.setVariable("author", "Jonsson Yan");
+        context.setVariable("url", "https://github.com/jonssonyan/spring-demo");
 
         String emailTemplate = templateEngine.process("test", context);
         mailService.sendHtmlMail("205820645@qq.com", "这是一封模板HTML邮件", emailTemplate);
@@ -93,7 +93,7 @@ public class MailController {
      */
     @PostMapping("/sendResourceMail")
     public Result sendResourceMail() throws MessagingException {
-        String rscId = "Spring Boot";
+        String rscId = "Spring Boot Demo";
         String content = "<html><body>这是带静态资源的邮件<br/><img src=\'cid:" + rscId + "\' ></body></html>";
         URL resource = ResourceUtil.getResource("static/tx.png");
         mailService.sendResourceMail("205820645@qq.com", "这是一封带静态资源的邮件", content, resource.getPath(), rscId);
