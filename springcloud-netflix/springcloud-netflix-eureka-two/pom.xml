@@ -8,11 +8,11 @@
         <version>2.3.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.springcloud</groupId>
-    <artifactId>spring-cloud-netflix-eureka</artifactId>
+    <groupId>com.springboot</groupId>
+    <artifactId>springcloud-netflix-eureka-two</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud-netflix-eureka</name>
-    <description>Demo project for Spring Cloud Netflix Eureka</description>
+    <name>springcloud-netflix-eureka-two</name>
+    <description>Demo project for Spring Cloud Netfilx Eureka Two</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -31,10 +31,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
     </dependencies>
     <!-- SpringCloud依赖，起到管理版本的作用 -->
