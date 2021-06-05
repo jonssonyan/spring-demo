@@ -6,10 +6,10 @@
         <groupId>com.springboot</groupId>
         <artifactId>springboot-dubbo-zookeeper</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/>
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <artifactId>springboot-dubbo-zookeeper-common</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${reversion}</version>
 
 
 </project>
