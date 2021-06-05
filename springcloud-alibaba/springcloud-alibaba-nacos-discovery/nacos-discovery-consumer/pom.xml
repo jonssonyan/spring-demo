@@ -14,14 +14,13 @@
     <description>Demo project for Spring Cloud Alibaba Nacos Discovery Consumer</description>
 
     <properties>
-        <spring-cloud-netflix.version>2.2.5.RELEASE</spring-cloud-netflix.version>
+
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-            <version>${spring-cloud-netflix.version}</version>
         </dependency>
     </dependencies>
 
