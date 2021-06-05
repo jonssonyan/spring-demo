@@ -6,7 +6,7 @@
         <groupId>com.springcloud</groupId>
         <artifactId>springcloud-alibaba-nacos-discovery</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/>
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <artifactId>nacos-discovery-provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -24,7 +24,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring-boot.version}</version>
             </plugin>
         </plugins>
     </build>
