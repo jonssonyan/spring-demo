@@ -6,7 +6,7 @@
         <groupId>com.springcloud</groupId>
         <artifactId>springcloud-netflix</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <artifactId>springcloud-netflix-eureka</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -22,11 +22,6 @@
     </modules>
 
     <dependencies>
-        <!-- 最新版的 eureka 服务端包 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
