@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
- * 从RocketMQ Spring 2.2.0开始，RocketMQ Srping支持Pull模式消费
+ * 从RocketMQ Spring 2.2.0开始，RocketMQ Spring支持Pull模式消费
  * 对于慢消费，消息量有限且到来的速度不均匀的情况，pull模式比较合适
  */
 @Component
