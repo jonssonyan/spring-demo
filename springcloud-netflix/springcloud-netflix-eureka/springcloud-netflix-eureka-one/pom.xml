@@ -9,7 +9,7 @@
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <artifactId>springcloud-netflix-eureka-one</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${reversion}</version>
     <name>springcloud-netflix-eureka-one</name>
     <description>Demo project for Spring Cloud Netflix Eureka</description>
     <properties>

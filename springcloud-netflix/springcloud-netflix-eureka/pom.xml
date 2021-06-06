@@ -9,7 +9,7 @@
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <artifactId>springcloud-netflix-eureka</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${reversion}</version>
     <packaging>pom</packaging>
 
     <properties>

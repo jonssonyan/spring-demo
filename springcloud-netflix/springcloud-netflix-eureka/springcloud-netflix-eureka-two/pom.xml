@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.springboot</groupId>
     <artifactId>springcloud-netflix-eureka-two</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${reversion}</version>
     <name>springcloud-netflix-eureka-two</name>
     <description>Demo project for Spring Cloud Netfilx Eureka Two</description>
     <properties>
