@@ -9,7 +9,7 @@
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <artifactId>springcloud-alibaba-nacos-discovery</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${reversion}</version>
     <packaging>pom</packaging>
     <name>springcloud-alibaba-nacos-discovery</name>
     <description>Demo project for Spring Cloud Alibaba Nacos Discovery</description>
