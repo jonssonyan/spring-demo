@@ -61,7 +61,7 @@ public class SpringcloudGatewayApplication {
     }
 
     @Bean
-    SecurityWebFilterChain springWebFilterChain(ServerHttpSecurity http) throws Exception {
+    SecurityWebFilterChain springWebFilterChain(ServerHttpSecurity http) {
         return http.httpBasic().and()
                 .csrf().disable()
                 .authorizeExchange()
