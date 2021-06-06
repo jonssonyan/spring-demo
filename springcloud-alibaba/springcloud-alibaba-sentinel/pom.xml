@@ -9,7 +9,7 @@
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <artifactId>springcloud-alibaba-sentinel</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${reversion}</version>
     <name>springcloud-alibaba-sentinel</name>
     <description>Demo project for Spring Cloud Alibaba Sentinel</description>
     <properties>
