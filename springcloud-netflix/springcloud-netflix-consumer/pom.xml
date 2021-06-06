@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.spingcloud</groupId>
     <artifactId>springcloud-netflix-consumer</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${reversion}</version>
     <name>springcloud-netflix-consumer</name>
     <description>Demo project for Spring Cloud Netflix Consumer</description>
     <properties>
