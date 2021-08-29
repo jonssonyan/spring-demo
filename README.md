@@ -2,6 +2,8 @@
 
 由浅入深，学习Spring Boot、Spring Cloud Alibaba、Spring Cloud Netflix、Dubbo、Spring Security&Shiro、Mybatis\Mybatis Plus等Java企业级框架
 
+持续更新中...
+
 ## Spring Boot
 
 1. [SpringBoot AOP](./SpringBoot-aop)
@@ -27,5 +29,3 @@
 
 1. [SpringCloud Alibaba生态](./springcloud-alibaba)
 2. [SpringCloud Netflix生态](./springcloud-netflix)
-
-持续更新中...
