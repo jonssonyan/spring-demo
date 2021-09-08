@@ -1,4 +1,4 @@
-package com.springboot.entity.export;
+package com.springboot.vo;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
 import cn.afterturn.easypoi.excel.annotation.ExcelTarget;
@@ -7,8 +7,8 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-@ExcelTarget("userExportVO")
-public class UserExportVO {
+@ExcelTarget("userExportVo")
+public class UserExportVo {
     @Excel(name = "编号")
     private Long id;
     @Excel(name = "用户名", isImportField = "true")

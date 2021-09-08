@@ -1,11 +1,13 @@
 package com.springboot.entity;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
 
 @Data
+@TableName("user")
 public class User implements Serializable {
     private static final long serialVersionUID = 1348665906085238496L;
     private Long id;

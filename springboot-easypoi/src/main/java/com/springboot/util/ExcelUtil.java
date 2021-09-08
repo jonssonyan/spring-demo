@@ -1,25 +1,31 @@
-package com.springboot.utils;
+package com.springboot.util;
 
 import cn.afterturn.easypoi.excel.ExcelExportUtil;
 import cn.afterturn.easypoi.excel.entity.ExportParams;
 import cn.afterturn.easypoi.excel.entity.enmus.ExcelType;
+import com.springboot.bo.ExportBo;
 import org.apache.poi.ss.usermodel.Workbook;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * excel导出工具类
+ */
 public class ExcelUtil {
     /**
      * 创建workbook,
-     * 通过maplist填充Excel内容
+     * 通过mapList填充Excel内容
      * 返回workbook
-     * <p>
-     * 进一步使用可以写入流,e.g.
-     * FileOutputStream fos = new FileOutputStream(file);
-     * workbook.write(fos);
      */
-    public static Workbook mutiSheet(List<Map<String, Object>> mapListList) {
+    public static Workbook moreSheetSheet(List<ExportBo> list) {
+        List<Map<String, Object>> mapListList = new ArrayList<>();
+        list.forEach(exportBo -> {
+            Map<String, Object> oneSheet = ExcelUtil.createOneSheet(exportBo.getSheetName(), exportBo.getTitle(), exportBo.getClazz(), exportBo.getData());
+            mapListList.add(oneSheet);
+        });
         return ExcelExportUtil.exportExcel(mapListList, ExcelType.XSSF);
     }
 

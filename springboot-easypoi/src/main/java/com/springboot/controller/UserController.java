@@ -1,8 +1,6 @@
 package com.springboot.controller;
 
-import com.springboot.entity.vo.UserVO;
 import com.springboot.service.UserService;
-import com.sun.deploy.net.HttpResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -16,7 +14,6 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-
 
     @GetMapping("/exportExcel")
     public void exportExcel(HttpServletResponse response, @RequestParam(value = "startTime", required = false) Date startTime,
