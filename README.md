@@ -24,7 +24,7 @@
 16. [SpringBoot整合Swagger2](./springboot-swagger2)
 17. [SpringBoot整合Thymeleaf](./springboot-thymeleaf)
 18. [SpringBoot整合Websocket](./springboot-websocket)
-19. [SpringBoot整合Websocket](./springboot-itext)
+19. [SpringBoot整合iText](./springboot-itext)
 
 ## Spring Cloud
 
