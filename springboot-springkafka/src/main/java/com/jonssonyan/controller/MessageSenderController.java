@@ -1,6 +1,6 @@
-package com.springboot.controller;
+package com.jonssonyan.controller;
 
-import com.springboot.domain.Message;
+import com.jonssonyan.domain.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package com.springboot.domain;
+package com.jonssonyan.domain;
 
 import java.io.Serializable;
 

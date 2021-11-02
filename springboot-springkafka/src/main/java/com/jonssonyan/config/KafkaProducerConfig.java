@@ -1,6 +1,6 @@
-package com.springboot.config;
+package com.jonssonyan.config;
 
-import com.springboot.domain.Message;
+import com.jonssonyan.domain.Message;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;
