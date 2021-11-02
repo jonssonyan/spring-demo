@@ -1,6 +1,6 @@
-package com.springcloud.config;
+package com.jonssonyan.config;
 
-import com.springcloud.service.impl.EchoServiceFallback;
+import com.jonssonyan.service.impl.EchoServiceFallback;
 import org.springframework.context.annotation.Bean;
 
 public class FeignConfig {

@@ -1,7 +1,7 @@
-package com.springcloud.service;
+package com.jonssonyan.service;
 
-import com.springcloud.config.FeignConfig;
-import com.springcloud.service.impl.EchoServiceFallback;
+import com.jonssonyan.config.FeignConfig;
+import com.jonssonyan.service.impl.EchoServiceFallback;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

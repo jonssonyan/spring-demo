@@ -1,6 +1,6 @@
-package com.springcloud.service.impl;
+package com.jonssonyan.service.impl;
 
-import com.springcloud.service.EchoService;
+import com.jonssonyan.service.EchoService;
 
 public class EchoServiceFallback implements EchoService {
     public String echo(String str) {

@@ -1,6 +1,6 @@
-package com.springcloud.controller;
+package com.jonssonyan.controller;
 
-import com.springcloud.service.TestService;
+import com.jonssonyan.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

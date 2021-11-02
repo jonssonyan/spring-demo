@@ -1,4 +1,4 @@
-package com.springcloud.service;
+package com.jonssonyan.service;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import org.springframework.stereotype.Service;
