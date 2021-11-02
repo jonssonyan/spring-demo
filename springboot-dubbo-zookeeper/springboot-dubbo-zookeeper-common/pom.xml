@@ -7,13 +7,14 @@
         <groupId>com.jonssonyan</groupId>
         <artifactId>springboot-dubbo-zookeeper</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>springboot-dubbo-zookeeper-common</artifactId>
-    <version>${reversion}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>springboot-dubbo-zookeeper-common</name>
     <description>Demo project for Spring Boot Dubbo Zookeeper Common</description>
+    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
