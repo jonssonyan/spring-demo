@@ -1,7 +1,7 @@
-package com.springboot.dao;
+package com.jonssonyan.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.springboot.entity.ProviderTable;
+import com.jonssonyan.entity.ProviderTable;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 

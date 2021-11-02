@@ -1,8 +1,8 @@
-package com.springboot.service;
+package com.jonssonyan.service;
 
 import com.alibaba.fastjson.JSON;
-import com.springboot.dao.ProviderDao;
-import com.springboot.entity.ProviderTable;
+import com.jonssonyan.dao.ProviderDao;
+import com.jonssonyan.entity.ProviderTable;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
