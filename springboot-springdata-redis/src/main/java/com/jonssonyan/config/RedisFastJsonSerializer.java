@@ -1,4 +1,4 @@
-package com.springboot.config;
+package com.jonssonyan.config;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.parser.ParserConfig;
@@ -19,7 +19,7 @@ import java.util.Objects;
 public class RedisFastJsonSerializer<T> implements RedisSerializer<T> {
     // 新建的GenericFastJson2JsonRedisSerializer里面添加白名,防止fastjson 反序列化报错
     static {
-        ParserConfig.getGlobalInstance().addAccept("com.springboot");
+        ParserConfig.getGlobalInstance().addAccept("com.jonssonyan");
     }
 
     private final Class<T> clazz;

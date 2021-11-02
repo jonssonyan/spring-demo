@@ -1,6 +1,6 @@
-package com.springboot.service;
+package com.jonssonyan.service;
 
-import com.springboot.entity.RedisKey;
+import com.jonssonyan.entity.RedisKey;
 import lombok.SneakyThrows;
 import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.io.FileUtils;

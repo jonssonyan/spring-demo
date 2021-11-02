@@ -1,9 +1,9 @@
-package com.springboot.controller;
+package com.jonssonyan.controller;
 
-import com.springboot.entity.RedisKey;
-import com.springboot.entity.User;
-import com.springboot.entity.vo.ResultVO;
-import com.springboot.service.RedisService;
+import com.jonssonyan.entity.RedisKey;
+import com.jonssonyan.entity.User;
+import com.jonssonyan.entity.vo.ResultVO;
+import com.jonssonyan.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;

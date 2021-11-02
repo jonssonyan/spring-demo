@@ -1,6 +1,6 @@
-package com.springboot.config;
+package com.jonssonyan.config;
 
-import com.springboot.service.RedisService;
+import com.jonssonyan.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
