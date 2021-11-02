@@ -1,4 +1,4 @@
-package com.springboot.config;
+package com.jonssonyan.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -35,7 +35,7 @@ public class SwaggerConfig {
                     withClassAnnotation( final Class<? extends Annotation> annotation)
                     basePackage( final String basePackage) // 根据包路径扫描接口
                 */
-                .apis(RequestHandlerSelectors.basePackage("com.springboot.controller")) // 指定controller包
+                .apis(RequestHandlerSelectors.basePackage("com.jonssonyan.controller")) // 指定controller包
                 /*
                     // 配置如何通过path过滤,即这里只扫描请求以/开头的接口
                     any() // 任何请求都扫描
