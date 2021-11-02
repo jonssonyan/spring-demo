@@ -30,6 +30,6 @@ https://github.com/apache/dubbo-admin
 
 ### 端口相关
 1. dubbo-admin-server 端口8080
-2. consumer 端口9091
-3. provider 端口9092
+2. consumer 端口9093
+3. provider 端口9094
 4. zookeeper 端口2181（如果要修改配置文件在\conf\zoo.cfg，记得将consumer/provider中的端口也一并修改）
