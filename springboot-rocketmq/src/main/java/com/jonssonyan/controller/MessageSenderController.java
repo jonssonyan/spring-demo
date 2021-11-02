@@ -1,7 +1,7 @@
-package com.springboot.controller;
+package com.jonssonyan.controller;
 
-import com.springboot.entity.OrderPaidEvent;
-import com.springboot.entity.vo.Result;
+import com.jonssonyan.entity.OrderPaidEvent;
+import com.jonssonyan.entity.vo.Result;
 import org.apache.rocketmq.client.producer.SendCallback;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;

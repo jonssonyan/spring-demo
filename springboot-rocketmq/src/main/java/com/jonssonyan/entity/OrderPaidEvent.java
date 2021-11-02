@@ -1,4 +1,4 @@
-package com.springboot.entity;
+package com.jonssonyan.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

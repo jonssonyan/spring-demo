@@ -1,6 +1,6 @@
-package com.springboot.listener;
+package com.jonssonyan.listener;
 
-import com.springboot.entity.OrderPaidEvent;
+import com.jonssonyan.entity.OrderPaidEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;
