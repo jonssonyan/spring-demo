@@ -1,8 +1,8 @@
-package com.springboot.controller;
+package com.jonssonyan.controller;
 
 import cn.hutool.core.io.resource.ResourceUtil;
-import com.springboot.service.MailService;
-import com.springboot.vo.Result;
+import com.jonssonyan.service.MailService;
+import com.jonssonyan.vo.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,7 +1,7 @@
-package com.springboot.service.impl;
+package com.jonssonyan.service.impl;
 
 import cn.hutool.core.util.ArrayUtil;
-import com.springboot.service.MailService;
+import com.jonssonyan.service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.FileSystemResource;

@@ -1,4 +1,4 @@
-package com.springboot.service;
+package com.jonssonyan.service;
 
 import javax.mail.MessagingException;
 

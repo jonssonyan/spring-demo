@@ -1,4 +1,4 @@
-package com.springboot.vo;
+package com.jonssonyan.vo;
 
 public class Result {
     private Integer code;
