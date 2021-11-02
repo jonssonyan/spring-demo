@@ -1,8 +1,8 @@
-package com.springboot.service;
+package com.jonssonyan.service;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.springboot.dao.ConsumerDao;
-import com.springboot.entity.ConsumerTable;
+import com.jonssonyan.dao.ConsumerDao;
+import com.jonssonyan.entity.ConsumerTable;
 import org.springframework.stereotype.Service;
 
 @Service

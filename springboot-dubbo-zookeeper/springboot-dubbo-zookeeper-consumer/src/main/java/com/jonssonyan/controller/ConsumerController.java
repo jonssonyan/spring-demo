@@ -1,10 +1,10 @@
-package com.springboot.controller;
+package com.jonssonyan.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.springboot.entity.ConsumerTable;
-import com.springboot.entity.ProviderTable;
-import com.springboot.service.ConsumerService;
-import com.springboot.service.HelloService;
+import com.jonssonyan.entity.ConsumerTable;
+import com.jonssonyan.entity.ProviderTable;
+import com.jonssonyan.service.ConsumerService;
+import com.jonssonyan.service.HelloService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.beans.factory.annotation.Autowired;

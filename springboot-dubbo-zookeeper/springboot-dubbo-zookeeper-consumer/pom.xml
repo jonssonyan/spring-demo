@@ -2,29 +2,35 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
-        <groupId>com.springboot</groupId>
+        <groupId>com.jonssonyan</groupId>
         <artifactId>springboot-dubbo-zookeeper</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <artifactId>springboot-dubbo-zookeeper-consumer</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${reversion}</version>
     <name>springboot-dubbo-zookeeper-consumer</name>
     <description>Demo project for Spring Boot Dubbo Zookeeper Consumer</description>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <encoding>UTF-8</encoding>
         <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.springboot</groupId>
+            <groupId>com.jonssonyan</groupId>
             <artifactId>springboot-dubbo-zookeeper-common</artifactId>
             <version>${reversion}</version>
         </dependency>
         <dependency>
-            <groupId>com.springboot</groupId>
+            <groupId>com.jonssonyan</groupId>
             <artifactId>springboot-dubbo-zookeeper-provider</artifactId>
             <version>${reversion}</version>
         </dependency>
@@ -35,14 +41,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>7</source>
-                    <target>7</target>
-                </configuration>
             </plugin>
         </plugins>
     </build>
