@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>springboot-aop</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${reversion}</version>
     <name>springboot-aop</name>
     <description>Demo project for Spring Boot AOP</description>
 
