@@ -1,6 +1,6 @@
-package com.springboot.controller;
+package com.jonssonyan.controller;
 
-import com.springboot.entity.User;
+import com.jonssonyan.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
