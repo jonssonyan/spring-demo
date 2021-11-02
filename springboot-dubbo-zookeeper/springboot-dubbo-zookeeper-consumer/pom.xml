@@ -7,11 +7,11 @@
         <groupId>com.jonssonyan</groupId>
         <artifactId>springboot-dubbo-zookeeper</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>springboot-dubbo-zookeeper-consumer</artifactId>
-    <version>${reversion}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>springboot-dubbo-zookeeper-consumer</name>
     <description>Demo project for Spring Boot Dubbo Zookeeper Consumer</description>
 
@@ -27,12 +27,12 @@
         <dependency>
             <groupId>com.jonssonyan</groupId>
             <artifactId>springboot-dubbo-zookeeper-common</artifactId>
-            <version>${reversion}</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.jonssonyan</groupId>
             <artifactId>springboot-dubbo-zookeeper-provider</artifactId>
-            <version>${reversion}</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
