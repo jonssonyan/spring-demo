@@ -1,8 +1,8 @@
-package com.springboot.controller;
+package com.jonssonyan.controller;
 
-import com.springboot.entity.User;
-import com.springboot.entity.vo.Result;
-import com.springboot.util.ValidatorUtil;
+import com.jonssonyan.entity.User;
+import com.jonssonyan.entity.vo.Result;
+import com.jonssonyan.util.ValidatorUtil;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

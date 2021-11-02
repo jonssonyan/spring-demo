@@ -1,6 +1,6 @@
-package com.springboot.advice;
+package com.jonssonyan.advice;
 
-import com.springboot.entity.vo.Result;
+import com.jonssonyan.entity.vo.Result;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;

@@ -1,4 +1,4 @@
-package com.springboot.util;
+package com.jonssonyan.util;
 
 import org.hibernate.validator.HibernateValidator;
 

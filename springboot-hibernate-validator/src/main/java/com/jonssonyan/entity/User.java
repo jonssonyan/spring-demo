@@ -1,4 +1,4 @@
-package com.springboot.entity;
+package com.jonssonyan.entity;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import org.hibernate.validator.constraints.Range;
@@ -6,8 +6,6 @@ import org.hibernate.validator.constraints.Range;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
-import java.util.Date;
-import java.util.Objects;
 
 public class User {
     private Long id;
