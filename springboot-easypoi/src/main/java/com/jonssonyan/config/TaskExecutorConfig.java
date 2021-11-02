@@ -1,4 +1,4 @@
-package com.springboot.config;
+package com.jonssonyan.config;
 
 import org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler;
 import org.springframework.context.annotation.Configuration;

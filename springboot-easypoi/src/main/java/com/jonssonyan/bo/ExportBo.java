@@ -1,4 +1,4 @@
-package com.springboot.bo;
+package com.jonssonyan.bo;
 
 import lombok.Builder;
 import lombok.Data;

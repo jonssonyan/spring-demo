@@ -1,4 +1,4 @@
-package com.springboot.vo;
+package com.jonssonyan.vo;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
 import cn.afterturn.easypoi.excel.annotation.ExcelTarget;

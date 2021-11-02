@@ -1,8 +1,8 @@
-package com.springboot.dao;
+package com.jonssonyan.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.springboot.entity.User;
-import com.springboot.vo.UserExportVo;
+import com.jonssonyan.entity.User;
+import com.jonssonyan.vo.UserExportVo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;

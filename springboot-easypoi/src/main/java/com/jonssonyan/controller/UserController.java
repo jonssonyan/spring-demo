@@ -1,6 +1,6 @@
-package com.springboot.controller;
+package com.jonssonyan.controller;
 
-import com.springboot.service.UserService;
+import com.jonssonyan.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
