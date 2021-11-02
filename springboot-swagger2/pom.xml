@@ -7,11 +7,11 @@
         <groupId>com.jonssonyan</groupId>
         <artifactId>spring-demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>springboot-swagger2</artifactId>
-    <version>${reversion}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>springboot-swagger2</name>
     <description>Demo project for Spring Boot Swagger2</description>
 
