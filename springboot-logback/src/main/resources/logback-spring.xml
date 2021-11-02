@@ -86,7 +86,7 @@
 
     <!-- 测试环境+开发环境. 多个使用逗号隔开. -->
     <springProfile name="test,dev">
-        <logger name="com.springboot.controller" level="DEBUG" additivity="false">
+        <logger name="com.jonssonyan" level="DEBUG" additivity="false">
             <appender-ref ref="consoleLog"/>
             <appender-ref ref="fileInfoLog"/>
             <appender-ref ref="fileErrorLog"/>
@@ -95,7 +95,7 @@
 
     <!-- 生产环境. -->
     <springProfile name="prod">
-        <logger name="com.springboot.controller" level="INFO" additivity="false">
+        <logger name="com.jonssonyan" level="INFO" additivity="false">
             <appender-ref ref="fileInfoLog"/>
             <appender-ref ref="fileErrorLog"/>
         </logger>
