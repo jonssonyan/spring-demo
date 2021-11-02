@@ -79,7 +79,7 @@
 <!--        <appender-ref ref="consoleLog"/>-->
 <!--    </root>-->
 <!--    &lt;!&ndash;name 扫描包的位置&ndash;&gt;-->
-<!--    <logger name="com.springboot" level="INFO">-->
+<!--    <logger name="com.jonssonyan" level="INFO">-->
 <!--        <appender-ref ref="fileInfoLog"/>-->
 <!--        <appender-ref ref="fileErrorLog"/>-->
 <!--    </logger>-->
