@@ -1,4 +1,4 @@
-package com.springcloud;
+package com.jonssonyan;
 
 import org.junit.Before;
 import org.junit.Test;
