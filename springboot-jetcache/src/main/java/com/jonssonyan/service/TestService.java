@@ -1,4 +1,4 @@
-package com.springboot.service;
+package com.jonssonyan.service;
 
 import com.alicp.jetcache.anno.CacheRefresh;
 import com.alicp.jetcache.anno.CacheType;
