@@ -1,11 +1,11 @@
-package com.springboot.service;
+package com.jonssonyan.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.springboot.dao.TestDao;
-import com.springboot.entity.Test;
-import com.springboot.entity.vo.TestVO;
+import com.jonssonyan.dao.TestDao;
+import com.jonssonyan.entity.Test;
+import com.jonssonyan.entity.vo.TestVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

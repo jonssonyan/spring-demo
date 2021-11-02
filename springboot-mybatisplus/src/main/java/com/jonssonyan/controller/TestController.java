@@ -1,10 +1,10 @@
-package com.springboot.controller;
+package com.jonssonyan.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.springboot.entity.Test;
-import com.springboot.entity.vo.Result;
-import com.springboot.entity.vo.TestVO;
-import com.springboot.service.TestService;
+import com.jonssonyan.entity.Test;
+import com.jonssonyan.entity.vo.Result;
+import com.jonssonyan.entity.vo.TestVO;
+import com.jonssonyan.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
