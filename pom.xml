@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jonssonyan</groupId>
+    <artifactId>spring-demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>spring-demo</name>
+    <description>Demo project for Spring</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>springboot-aop</module>
+        <module>springboot-docker</module>
+        <module>springboot-dubbo-zookeeper</module>
+        <module>springboot-easypoi</module>
+        <module>springboot-hibernate-validator</module>
+        <module>springboot-itext</module>
+        <module>springboot-jetcache</module>
+        <module>springboot-logback</module>
+        <module>springboot-mail</module>
+        <module>springboot-mybatisplus</module>
+        <module>springboot-rocketmq</module>
+        <module>springboot-shiro</module>
+        <module>springboot-springdata-elasticsearch</module>
+        <module>springboot-springdata-redis</module>
+        <module>springboot-springkafka</module>
+        <module>springboot-springsecurity-jwt</module>
+        <module>springboot-swagger2</module>
+        <module>springboot-thymeleaf</module>
+        <module>springboot-websocket</module>
+        <module>springcloud-alibaba</module>
+        <module>springcloud-netflix</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <encoding>UTF-8</encoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <reversion>0.0.1-SNAPSHOT</reversion>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
