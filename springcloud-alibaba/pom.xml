@@ -7,11 +7,11 @@
         <groupId>com.jonssonyan</groupId>
         <artifactId>spring-demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>springcloud-alibaba</artifactId>
-    <version>${reversion}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>springcloud-alibaba</name>
     <description>Demo project for Spring Cloud Alibaba</description>
     <packaging>pom</packaging>
@@ -32,6 +32,8 @@
         <module>springcloud-alibaba-nacos-config</module>
         <module>springcloud-alibaba-nacos-discovery</module>
         <module>springcloud-alibaba-sentinel</module>
+        <module>springcloud-gateway</module>
+        <module>springcloud-stream-rocketmq</module>
     </modules>
 
     <dependencies>
