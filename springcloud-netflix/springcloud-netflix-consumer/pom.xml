@@ -7,11 +7,11 @@
         <groupId>com.jonssonyan</groupId>
         <artifactId>springcloud-netflix</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>springcloud-netflix-consumer</artifactId>
-    <version>${reversion}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>springcloud-netflix-consumer</name>
     <description>Demo project for Spring Cloud Netflix Consumer</description>
 
