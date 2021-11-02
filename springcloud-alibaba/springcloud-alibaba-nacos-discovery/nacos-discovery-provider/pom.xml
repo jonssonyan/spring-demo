@@ -7,11 +7,11 @@
         <groupId>com.jonssonyan</groupId>
         <artifactId>springcloud-alibaba-nacos-discovery</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>nacos-discovery-provider</artifactId>
-    <version>${reversion}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>nacos-discovery-provider</name>
     <description>Demo project for Spring Cloud Alibaba Nacos Discovery Provider</description>
 
