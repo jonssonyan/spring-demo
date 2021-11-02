@@ -7,11 +7,11 @@
         <groupId>com.jonssonyan</groupId>
         <artifactId>spring-demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>springboot-docker</artifactId>
-    <version>${reversion}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>springboot-docker</name>
     <description>Demo project for Spring Boot Docker</description>
 
