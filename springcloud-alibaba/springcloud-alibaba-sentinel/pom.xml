@@ -7,11 +7,11 @@
         <groupId>com.jonssonyan</groupId>
         <artifactId>springcloud-alibaba</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>springcloud-alibaba-sentinel</artifactId>
-    <version>${reversion}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>springcloud-alibaba-sentinel</name>
     <description>Demo project for Spring Cloud Alibaba Sentinel</description>
 
