@@ -1,8 +1,8 @@
-package com.springboot.service.impl;
+package com.jonssonyan.service.impl;
 
-import com.springboot.dao.MessageDao;
-import com.springboot.entity.Message;
-import com.springboot.service.MessageService;
+import com.jonssonyan.dao.MessageDao;
+import com.jonssonyan.entity.Message;
+import com.jonssonyan.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

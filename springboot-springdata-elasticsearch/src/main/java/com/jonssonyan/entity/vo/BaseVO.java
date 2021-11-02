@@ -1,4 +1,4 @@
-package com.springboot.entity.vo;
+package com.jonssonyan.entity.vo;
 
 import lombok.Data;
 

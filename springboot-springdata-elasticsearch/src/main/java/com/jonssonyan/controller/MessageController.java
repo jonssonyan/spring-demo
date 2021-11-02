@@ -1,9 +1,9 @@
-package com.springboot.controller;
+package com.jonssonyan.controller;
 
-import com.springboot.entity.Message;
-import com.springboot.entity.vo.MessageVO;
-import com.springboot.entity.vo.ResultVO;
-import com.springboot.service.MessageService;
+import com.jonssonyan.entity.Message;
+import com.jonssonyan.entity.vo.MessageVO;
+import com.jonssonyan.entity.vo.ResultVO;
+import com.jonssonyan.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;

@@ -1,13 +1,12 @@
-package com.springboot.dao;
+package com.jonssonyan.dao;
 
-import com.springboot.entity.Message;
+import com.jonssonyan.entity.Message;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Date;
 import java.util.List;
 
 @Repository

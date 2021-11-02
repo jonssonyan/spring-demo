@@ -1,6 +1,6 @@
-package com.springboot.service;
+package com.jonssonyan.service;
 
-import com.springboot.entity.Message;
+import com.jonssonyan.entity.Message;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
