@@ -1,4 +1,4 @@
-package com.springboot.config;
+package com.jonssonyan.config;
 
 import org.apache.shiro.mgt.DefaultSecurityManager;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;

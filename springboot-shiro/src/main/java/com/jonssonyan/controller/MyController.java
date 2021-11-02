@@ -1,4 +1,4 @@
-package com.springboot.controller;
+package com.jonssonyan.controller;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;

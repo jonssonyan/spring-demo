@@ -1,4 +1,4 @@
-package com.springboot.config;
+package com.jonssonyan.config;
 
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
