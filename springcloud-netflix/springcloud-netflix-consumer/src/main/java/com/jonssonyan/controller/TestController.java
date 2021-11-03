@@ -19,6 +19,6 @@ public class TestController {
      */
     @GetMapping("/info")
     public String getInfo() {
-        return this.restTemplate.getForEntity("http://Server-Provider/hello", String.class).getBody();
+        return this.restTemplate.getForEntity("http://Server-Provider/provider/hello", String.class).getBody();
     }
 }
