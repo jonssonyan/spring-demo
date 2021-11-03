@@ -1,12 +1,13 @@
 # Spring demo
 
-由浅入深，学习Spring Boot、Spring Cloud Alibaba、Spring Cloud Netflix、Dubbo、Spring Security&Shiro、Mybatis\Mybatis Plus等Java企业级框架
+由浅入深，学习Spring Boot、Spring Cloud Alibaba、Spring Cloud Netflix、Dubbo、Spring Security&Shiro、Mybatis\Mybatis
+Plus、Kafka、RocketMQ、Zookeeper、Docker等
 
 持续更新中...
 
 ## Spring Boot
 
-1. [SpringBoot AOP](./SpringBoot-aop)
+1. [SpringBoot AOP](./springboot-aop)
 2. [SpringBoot整合Docker](./springboot-docker)
 3. [SpringBoot整合Dubbo+Zookeeper](./springboot-dubbo-zookeeper)
 4. [SpringBoot整合Easy Poi](./springboot-easypoi)
