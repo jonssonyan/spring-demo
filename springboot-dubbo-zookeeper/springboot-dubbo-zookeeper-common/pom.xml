@@ -14,7 +14,6 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-dubbo-zookeeper-common</name>
     <description>Demo project for Spring Boot Dubbo Zookeeper Common</description>
-    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,12 +23,4 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>
