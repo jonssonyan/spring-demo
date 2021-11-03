@@ -16,7 +16,7 @@ public class TestController {
 
     @GetMapping(value = "/echo/{str}")
     public String echo(@PathVariable String str) {
-        return restTemplate.getForObject("http://service-provider/echo/" + str, String.class);
+        return restTemplate.getForObject("http://service-provider/provider/echo/" + str, String.class);
     }
 
     @GetMapping(value = "/print/{str}")

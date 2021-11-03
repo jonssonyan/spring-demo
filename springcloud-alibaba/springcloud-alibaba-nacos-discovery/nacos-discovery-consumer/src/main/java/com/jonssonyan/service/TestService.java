@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Service
 @FeignClient("service-provider")
 public interface TestService {
-    @GetMapping("/echo/{str}")
+    @GetMapping("/provider/echo/{str}")
     String print(@PathVariable(value = "str") String str);
 }
