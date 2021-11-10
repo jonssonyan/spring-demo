@@ -1,6 +1,6 @@
 # Spring Demo
 
-软件设计，由浅入深学习Spring Boot、Spring Cloud Alibaba、Spring Cloud Netflix、Dubbo、Spring Security&Shiro、Mybatis\Mybatis
+由浅入深学习Spring Boot、Spring Cloud Alibaba、Spring Cloud Netflix、Dubbo、Spring Security&Shiro、Mybatis\Mybatis
 Plus、Kafka、RocketMQ、Zookeeper、Docker等Java企业级框架
 
 持续更新中...
