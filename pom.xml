@@ -30,6 +30,7 @@
         <module>springboot-swagger2</module>
         <module>springboot-thymeleaf</module>
         <module>springboot-websocket</module>
+        <module>springboot-utils</module>
         <module>springcloud-alibaba</module>
         <module>springcloud-netflix</module>
     </modules>
