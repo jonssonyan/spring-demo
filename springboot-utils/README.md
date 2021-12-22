@@ -21,3 +21,4 @@ https://github.com/FasterXML/jackson
 
 ## GSON
 
+## mapstruct
