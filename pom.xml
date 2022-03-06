@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>springboot-activiti</module>
         <module>springboot-aop</module>
         <module>springboot-docker</module>
         <module>springboot-dubbo-zookeeper</module>
