@@ -29,7 +29,7 @@ public class ActivitiController {
     private RuntimeService runtimeService;
 
     /**
-     * 部署流程
+     * classpath资源部署
      */
     @PostMapping("/initProcesses")
     public Result initProcesses(@RequestBody InitProcessesVo initProcessesVo) {
