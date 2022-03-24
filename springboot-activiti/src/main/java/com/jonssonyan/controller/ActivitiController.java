@@ -1,9 +1,10 @@
 package com.jonssonyan.controller;
 
 
-import com.jonssonyan.entity.vo.InitProcessesVo;
+import com.jonssonyan.entity.dto.TaskDto;
+import com.jonssonyan.entity.vo.InitProcessVo;
 import com.jonssonyan.entity.vo.Result;
-import com.jonssonyan.entity.vo.StartProcessesVo;
+import com.jonssonyan.entity.vo.StartProcessVo;
 import lombok.extern.slf4j.Slf4j;
 import org.activiti.engine.HistoryService;
 import org.activiti.engine.RepositoryService;
@@ -15,10 +16,11 @@ import org.activiti.engine.runtime.ProcessInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @Slf4j
@@ -35,25 +37,27 @@ public class ActivitiController {
     /**
      * classpath资源部署
      */
-    @PostMapping("/initProcesses")
-    public Result initProcesses(@RequestBody InitProcessesVo initProcessesVo) {
+    @PostMapping("/initProcess")
+    public Result initProcess(@RequestBody InitProcessVo initProcessVo) {
         //部署对象
         Deployment deployment = repositoryService.createDeployment()
-                .name(initProcessesVo.getName())
+                .name(initProcessVo.getName())
                 // bpmn文件
-                .addClasspathResource(String.format("process/%s", initProcessesVo.getResource()))
+                .addClasspathResource(String.format("process/%s.bpmn20.xml", initProcessVo.getResource()))
                 .deploy();
         log.info("流程部署id: {}", deployment.getId());
-        log.info("流程部署名称: {}", deployment.getName());
+        log.info("流程部署name: {}", deployment.getName());
         return Result.success();
     }
 
     /**
      * 启动流程
      */
-    @PostMapping("/startProcesses")
-    public Result startPro(@RequestBody StartProcessesVo startProcessesVo) {
-        ProcessInstance processInstance = runtimeService.startProcessInstanceByKey(startProcessesVo.getProcessDefinitionKey());
+    @PostMapping("/startProcess")
+    public Result startPro(@RequestBody StartProcessVo startProcessVo) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("var", "我是流程变量");
+        ProcessInstance processInstance = runtimeService.startProcessInstanceByKey(startProcessVo.getProcessDefinitionKey(), map);
         log.info("流程启动成功，流程id: {}", processInstance.getId());
         log.info("流程启动成功，流程definitionName: {}", processInstance.getProcessDefinitionName());
         log.info("流程启动成功，流程businessKey: {}", processInstance.getBusinessKey());
@@ -74,24 +78,24 @@ public class ActivitiController {
     /**
      * 完成任务
      *
-     * @param taskId 流程id
+     * @param taskDto 流程
      * @return
      */
     @PostMapping("/completeByTaskById")
-    public Result completeTaskById(@RequestParam String taskId) {
-        taskService.complete(taskId);
+    public Result completeTaskById(@RequestBody TaskDto taskDto) {
+        taskService.complete(taskDto.getId());
         return Result.success();
     }
 
     /**
      * 结束流程
      *
-     * @param taskId 流程id
+     * @param taskDto 流程
      * @return
      */
     @PostMapping("/deleteByTaskById")
-    public Result deleteProcessInstance(@RequestParam String taskId) {
-        taskService.deleteTask(taskId);
+    public Result deleteProcessInstance(@RequestBody TaskDto taskDto) {
+        taskService.deleteTask(taskDto.getId());
         return Result.success();
     }
 }
