@@ -43,7 +43,7 @@ public class ActivitiController {
         Deployment deployment = repositoryService.createDeployment()
                 .name(initProcessVo.getName())
                 // bpmn文件
-                .addClasspathResource(String.format("process/%s.bpmn20.xml", initProcessVo.getResource()))
+                .addClasspathResource(String.format("processes/%s.bpmn20.xml", initProcessVo.getResource()))
                 .deploy();
         log.info("流程部署id: {}", deployment.getId());
         log.info("流程部署name: {}", deployment.getName());
