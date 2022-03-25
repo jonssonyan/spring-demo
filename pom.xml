@@ -16,6 +16,7 @@
         <module>springboot-docker</module>
         <module>springboot-dubbo-zookeeper</module>
         <module>springboot-easypoi</module>
+        <module>springboot-flowable</module>
         <module>springboot-hibernate-validator</module>
         <module>springboot-itext</module>
         <module>springboot-jetcache</module>
