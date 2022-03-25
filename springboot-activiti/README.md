@@ -55,7 +55,7 @@
 
 > 表的作用及其详细介绍：https://lucaslz.gitbooks.io/activiti-5-22/content/biaoxiang_qing_md.html
 
-# Activiti提供的服务 7大接口
+# 流程引擎API
 
 1. RepositoryService：提供一系列管理流程部署和流程定义的API，帮助我们实现流程定义的部署。此服务会处理与流程定义相关的静态数据。
 2. RuntimeService：在流程运行时对流程实例进行管理与控制。管理 ProcessInstances（当前正在运行的流程）以及流程变量。
