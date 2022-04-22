@@ -26,8 +26,9 @@ Plus、Kafka、RocketMQ、Zookeeper、Docker等Java企业级框架
 17. [SpringBoot整合Thymeleaf+Vue2](./springboot-thymeleaf-vue2)
 18. [SpringBoot整合Websocket](./springboot-websocket)
 19. [SpringBoot整合iText](./springboot-itext)
+20. [SpringBoot整合Activiti](./springboot-activiti)
 
 ## Spring Cloud
 
-1. [SpringCloud Alibaba生态](./springcloud-alibaba)
-2. [SpringCloud Netflix生态](./springcloud-netflix)
+1. [SpringCloud Alibaba](./springcloud-alibaba)
+2. [SpringCloud Netflix](./springcloud-netflix)
