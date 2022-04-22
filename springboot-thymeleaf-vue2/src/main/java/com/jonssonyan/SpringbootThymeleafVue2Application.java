@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootThymeleafApplication {
+public class SpringbootThymeleafVue2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootThymeleafApplication.class, args);
+        SpringApplication.run(SpringbootThymeleafVue2Application.class, args);
     }
 
 }
