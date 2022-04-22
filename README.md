@@ -23,7 +23,7 @@ Plus、Kafka、RocketMQ、Zookeeper、Docker等Java企业级框架
 14. [SpringBoot整合Kafka](./springboot-springkafka)
 15. [SpringBoot整合SpringSecurity+JWT](./springboot-springsecurity-jwt)
 16. [SpringBoot整合Swagger2](./springboot-swagger2)
-17. [SpringBoot整合Thymeleaf](./springboot-thymeleaf)
+17. [SpringBoot整合Thymeleaf+Vue2](./springboot-thymeleaf-vue2)
 18. [SpringBoot整合Websocket](./springboot-websocket)
 19. [SpringBoot整合iText](./springboot-itext)
 
