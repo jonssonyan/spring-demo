@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class RouterController {
-    @GetMapping("/index")
-    public String index() {
-        return "index";
+    @GetMapping("/userList")
+    public String userList() {
+        return "userList";
     }
 }
