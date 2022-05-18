@@ -10,9 +10,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>springboot-freemarker</artifactId>
+    <artifactId>springboot-freemarker-vue2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-freemarker</name>
+    <name>springboot-freemarker-vue2</name>
     <description>Demo project for Spring Boot FreeMarker Vue2</description>
 
     <properties>
