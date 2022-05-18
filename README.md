@@ -27,6 +27,9 @@ Plus、Kafka、RocketMQ、Zookeeper、Docker等Java企业级框架
 18. [SpringBoot整合Websocket](./springboot-websocket)
 19. [SpringBoot整合iText](./springboot-itext)
 20. [SpringBoot整合Activiti](./springboot-activiti)
+21. [SpringBoot整合FreeMarker](./springboot-freemarker-vue2)
+22. [SpringBoot整合Flowable](./springboot-flowable)
+23. [SpringBoot开发中常用的Util](./springboot-utils)
 
 ## Spring Cloud
 
