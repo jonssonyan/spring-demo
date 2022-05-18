@@ -34,6 +34,7 @@
         <module>springboot-thymeleaf-vue2</module>
         <module>springboot-websocket</module>
         <module>springboot-utils</module>
+        <module>springboot-liteflow</module>
         <module>springcloud-alibaba</module>
         <module>springcloud-netflix</module>
     </modules>
