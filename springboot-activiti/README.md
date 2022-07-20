@@ -22,36 +22,36 @@
 - ACT_RU_* :
   “RU”代表“Runtime”（运行时），这些表中保存一些流程实例、用户任务、变量等的运行时数据。Activiti只保存流程实例在执行过程中的运行时数据，并且当流程结束后会立即移除这些数据，这是为了保证运行时表尽量的小并运行的足够快；
 
-|表分类|表名称|表含义|
-|  ----  | ----  |----|
-一般数据|act_evt_log|事件处理日志表
-&nbsp;|act_ge_bytearray|通用的流程定义和流程资源
-&nbsp;|act_ge_property|系统相关属性
-流程历史记录|act_hi_actinst|历史的流程实例
-&nbsp;|act_hi_attachment|历史的流程附件
-&nbsp;|act_hi_comment|历史的说明性信息
-&nbsp;|act_hi_detail|历史的流程运行中的细节信息
-&nbsp;|act_hi_identitylink|历史的流程运行过程中用户关系
-&nbsp;|act_hi_procinst|历史的流程实例
-&nbsp;|act_hi_taskinst|历史的任务实例
-&nbsp;|act_hi_varinst|历史的流程运行中的变量信息
-用户用户组表|act_id_group|身份信息-用户组信息表
-&nbsp;|act_id_info|身份信息
-&nbsp;|act_id_membership|身份信息
-&nbsp;|act_id_user|身份信息
-&nbsp;|act_procdef_info|流程定义数据表
-流程定义表|act_re_deployment|部署单元信息
-&nbsp;|act_re_model|模型信息
-&nbsp;|act_re_procdef|已部署的流程定义
-运行实例表|act_ru_deadletter_job|执行失败任务表
-&nbsp;|act_ru_event_subscr|运行时事件
-&nbsp;|act_ru_execution|运行时流程执行实例
-&nbsp;|act_ru_identitylink|运行时用户关系信息
-&nbsp;|act_ru_job|运行时作业
-&nbsp;|act_ru_suspended_job|运行时暂停任务
-&nbsp;|act_ru_task|运行时任务
-&nbsp;|act_ru_timer_job|运行时定时任务
-&nbsp;|act_ru_variable|运行时变量表
+| 表分类    | 表名称                   | 表含义            |
+|--------|-----------------------|----------------|
+| 一般数据   | act_evt_log           | 事件处理日志表        |
+| &nbsp; | act_ge_bytearray      | 通用的流程定义和流程资源   |
+| &nbsp; | act_ge_property       | 系统相关属性         |
+| 流程历史记录 | act_hi_actinst        | 历史的流程实例        |
+| &nbsp; | act_hi_attachment     | 历史的流程附件        |
+| &nbsp; | act_hi_comment        | 历史的说明性信息       |
+| &nbsp; | act_hi_detail         | 历史的流程运行中的细节信息  |
+| &nbsp; | act_hi_identitylink   | 历史的流程运行过程中用户关系 |
+| &nbsp; | act_hi_procinst       | 历史的流程实例        |
+| &nbsp; | act_hi_taskinst       | 历史的任务实例        |
+| &nbsp; | act_hi_varinst        | 历史的流程运行中的变量信息  |
+| 用户用户组表 | act_id_group          | 身份信息-用户组信息表    |
+| &nbsp; | act_id_info           | 身份信息           |
+| &nbsp; | act_id_membership     | 身份信息           |
+| &nbsp; | act_id_user           | 身份信息           |
+| &nbsp; | act_procdef_info      | 流程定义数据表        |
+| 流程定义表  | act_re_deployment     | 部署单元信息         |
+| &nbsp; | act_re_model          | 模型信息           |
+| &nbsp; | act_re_procdef        | 已部署的流程定义       |
+| 运行实例表  | act_ru_deadletter_job | 执行失败任务表        |
+| &nbsp; | act_ru_event_subscr   | 运行时事件          |
+| &nbsp; | act_ru_execution      | 运行时流程执行实例      |
+| &nbsp; | act_ru_identitylink   | 运行时用户关系信息      |
+| &nbsp; | act_ru_job            | 运行时作业          |
+| &nbsp; | act_ru_suspended_job  | 运行时暂停任务        |
+| &nbsp; | act_ru_task           | 运行时任务          |
+| &nbsp; | act_ru_timer_job      | 运行时定时任务        |
+| &nbsp; | act_ru_variable       | 运行时变量表         |
 
 > 表的作用及其详细介绍：https://lucaslz.gitbooks.io/activiti-5-22/content/biaoxiang_qing_md.html
 
