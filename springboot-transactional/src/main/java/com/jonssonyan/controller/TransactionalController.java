@@ -1,13 +1,13 @@
 package com.jonssonyan.controller;
 
-import com.jonssonyan.service.DemoService;
+import com.jonssonyan.service.TransactionalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class DemoController {
+public class TransactionalController {
     @Autowired
-    private DemoService demoService;
+    private TransactionalService transactionalService;
 
 
 }

@@ -1,5 +1,5 @@
 package com.jonssonyan.service;
 
-public interface DemoService {
+public interface TransactionalService {
     void transactionalTest();
 }

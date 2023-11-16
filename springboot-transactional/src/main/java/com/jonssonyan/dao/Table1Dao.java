@@ -1,10 +1,12 @@
 package com.jonssonyan.dao;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.jonssonyan.entity.Table1;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface Table1Dao {
-    void saveTable1(@Param("table1") Table1 table1);
+@Mapper
+public interface Table1Dao extends BaseMapper<Table1> {
 }

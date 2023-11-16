@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.jonssonyan.dao.Table2Dao">
-    <insert id="saveTable2" parameterType="com.jonssonyan.entity.Table2">
-        insert into table2
-        values (#{table2.id}, #{table2.name})
-    </insert>
-</mapper>
