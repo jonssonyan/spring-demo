@@ -16,7 +16,7 @@ public class TestController {
     private TestService testService;
 
     @PostMapping("/test")
-    public Result<Object> selectPage(@RequestBody TestVO testVO) {
+    public Result selectPage(@RequestBody TestVO testVO) {
         IPage<Test> testIPage = testService.selectPage(testVO);
         return Result.success(testIPage);
     }
