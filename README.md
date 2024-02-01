@@ -5,13 +5,9 @@ Plus、Kafka、RocketMQ、Zookeeper、Docker等Java企业级框架
 
 持续更新中...
 
-# 作者
+## 目录
 
-[jonssonyan](https://jonssonyan.com)
-
-# 目录
-
-## Spring Boot
+### Spring Boot
 
 1. [SpringBoot AOP](./springboot-aop)
 2. [SpringBoot整合Docker](./springboot-docker)
@@ -37,7 +33,11 @@ Plus、Kafka、RocketMQ、Zookeeper、Docker等Java企业级框架
 22. [SpringBoot整合Flowable](./springboot-flowable)
 23. [SpringBoot开发中常用的Util](./springboot-utils)
 
-## Spring Cloud
+### Spring Cloud
 
 1. [SpringCloud Alibaba](./springcloud-alibaba)
 2. [SpringCloud Netflix](./springcloud-netflix)
+
+## 其他
+
+你可以在哔哩哔哩上关注我: https://space.bilibili.com/374864141
