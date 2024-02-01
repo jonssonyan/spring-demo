@@ -1,17 +1,13 @@
-# Spring Demo
+# Spring Boot 实战
 
 由浅入深学习Spring Boot、Spring Cloud Alibaba、Spring Cloud Netflix、Dubbo、Spring Security&Shiro、Mybatis\Mybatis
 Plus、Kafka、RocketMQ、Zookeeper、Docker等Java企业级框架
 
 持续更新中...
 
-# 作者
+## 目录
 
-[jonssonyan](https://jonssonyan.com)
-
-# 目录
-
-## Spring Boot
+### Spring Boot
 
 1. [SpringBoot AOP](./springboot-aop)
 2. [SpringBoot整合Docker](./springboot-docker)
@@ -37,7 +33,7 @@ Plus、Kafka、RocketMQ、Zookeeper、Docker等Java企业级框架
 22. [SpringBoot整合Flowable](./springboot-flowable)
 23. [SpringBoot开发中常用的Util](./springboot-utils)
 
-## Spring Cloud
+### Spring Cloud
 
 1. [SpringCloud Alibaba](./springcloud-alibaba)
 2. [SpringCloud Netflix](./springcloud-netflix)
