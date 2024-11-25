@@ -17,6 +17,7 @@ import java.util.Objects;
  * @param <T>
  */
 public class RedisFastJsonSerializer<T> implements RedisSerializer<T> {
+
     // 新建的GenericFastJson2JsonRedisSerializer里面添加白名,防止fastjson 反序列化报错
     static {
         ParserConfig.getGlobalInstance().addAccept("com.jonssonyan");

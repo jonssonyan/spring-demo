@@ -1,9 +1,5 @@
 package com.jonssonyan.config;
 
-import com.jonssonyan.service.RedisService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.cache.CacheManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,32 +12,12 @@ import org.springframework.data.redis.serializer.RedisSerializationContext;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 @Configuration
-@ConditionalOnClass(RedisService.class)
 public class RedisConfig {
-    private RedisTemplate<String, Object> redisTemplate;
 
-    @Bean
-    @ConditionalOnMissingBean
-    public RedisService redisService() {
-        return new RedisService(redisTemplate);
-    }
-
-    @Autowired
-    public void setRedisTemplate(RedisTemplate<String, Object> redisTemplate) {
-        this.redisTemplate = redisTemplate;
-    }
-
-    // redis configuration
-    // -----------------------------------------------------------------------------------------------------------------
-
-    /**
-     * key 的序列化器
-     */
+    // key 的序列化器
     private final StringRedisSerializer keyRedisSerializer = new StringRedisSerializer();
 
-    /**
-     * value 的序列化器
-     */
+    // value 的序列化器
     private final RedisFastJsonSerializer<Object> valueRedisSerializer = new RedisFastJsonSerializer<>(Object.class);
 
     @Bean
