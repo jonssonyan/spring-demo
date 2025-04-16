@@ -1,8 +1,8 @@
 server:
-  port: 9091
+  port: 9036
 spring:
   application:
-    name: gateway
+    name: springcloud-gateway-gateway
   main:
     allow-bean-definition-overriding: true
   cloud:
@@ -16,5 +16,5 @@ spring:
         server-addr: ${CFG_ADDR:}
         file-extension: yaml
         extension-configs:
-          - data-id: gateway.yaml
+          - data-id: springcloud-gateway-gateway.yaml
             refresh: true

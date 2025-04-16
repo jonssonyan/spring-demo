@@ -1,8 +1,8 @@
 server:
-  port: 9000
+  port: 9036
 spring:
   application:
-    name: user
+    name: springcloud-gateway-user
   main:
     allow-bean-definition-overriding: true
   cloud:
@@ -16,5 +16,5 @@ spring:
         server-addr: ${CFG_ADDR:}
         file-extension: yaml
         extension-configs:
-          - data-id: user.yaml
+          - data-id: springcloud-gateway-user.yaml
             refresh: true
