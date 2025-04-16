@@ -9,15 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableDiscoveryClient
 @RestController
-public class UserApplication {
+public class SpringcloudGatewayGatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserApplication.class, args);
+        SpringApplication.run(SpringcloudGatewayGatewayApplication.class, args);
     }
-
 
     @GetMapping("who")
     public String ping() {
-        return "this is user";
+        return "this is gateway";
     }
 }
