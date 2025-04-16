@@ -1,5 +1,5 @@
 server:
-  port: 9036
+  port: 9037
 spring:
   application:
     name: springcloud-gateway-user
