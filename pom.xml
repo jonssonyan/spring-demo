@@ -37,6 +37,7 @@
         <module>springboot-liteflow</module>
         <module>springcloud-alibaba</module>
         <module>springcloud-netflix</module>
+        <module>springcloud-gateway</module>
     </modules>
 
     <properties>

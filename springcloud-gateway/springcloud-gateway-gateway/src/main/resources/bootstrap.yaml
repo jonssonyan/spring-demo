@@ -1,0 +1,20 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: gateway
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        namespace: ${CFG_NS:}
+        server-addr: ${CFG_ADDR:}
+        register-enabled: true
+      config:
+        namespace: ${CFG_NS:}
+        server-addr: ${CFG_ADDR:}
+        file-extension: yaml
+        extension-configs:
+          - data-id: gateway.yaml
+            refresh: true
