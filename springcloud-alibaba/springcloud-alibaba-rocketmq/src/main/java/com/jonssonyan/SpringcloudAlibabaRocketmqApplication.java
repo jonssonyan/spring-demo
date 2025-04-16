@@ -15,14 +15,14 @@ import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.support.MessageBuilder;
 
 @SpringBootApplication
-@EnableBinding(SpringcloudStreamRocketmqApplication.PolledProcessor.class)
-public class SpringcloudStreamRocketmqApplication {
+@EnableBinding(SpringcloudAlibabaRocketmqApplication.PolledProcessor.class)
+public class SpringcloudAlibabaRocketmqApplication {
 
     private final Logger logger =
-            LoggerFactory.getLogger(SpringcloudStreamRocketmqApplication.class);
+            LoggerFactory.getLogger(SpringcloudAlibabaRocketmqApplication.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringcloudStreamRocketmqApplication.class, args);
+        SpringApplication.run(SpringcloudAlibabaRocketmqApplication.class, args);
     }
 
     @Bean

@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class SpringcloudGatewayApplication {
+public class SpringcloudAlibabaGatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringcloudGatewayApplication.class, args);
+        SpringApplication.run(SpringcloudAlibabaGatewayApplication.class, args);
     }
 
     @RequestMapping("/hystrixfallback")

@@ -14,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.web.reactive.function.client.ExchangeFilterFunctions.basicAuthentication;
 
 @SpringBootTest
-class SpringcloudGatewayApplicationTests {
+class SpringcloudAlibabaGatewayApplicationTests {
 
     @LocalServerPort
     int port;

@@ -10,10 +10,10 @@
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>springcloud-gateway</artifactId>
+    <artifactId>springcloud-alibaba-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springcloud-gateway</name>
-    <description>Demo project for Spring Cloud Gateway</description>
+    <name>springcloud-alibaba-gateway</name>
+    <description>Demo project for Spring Cloud Alibaba Gateway</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

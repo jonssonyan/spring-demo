@@ -10,7 +10,7 @@
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>springcloud-stream-rocketmq</artifactId>
+    <artifactId>springcloud-alibaba-rocketmq</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springcloud-stream-rocketmq</name>
     <description>Demo project for Spring Cloud Stream RocketMQ</description>
